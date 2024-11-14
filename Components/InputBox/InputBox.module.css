@@ -1,0 +1,101 @@
+.InputBox {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.InputBox label {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+
+.star {
+    position: absolute;
+    font-size: 12px;
+    margin-top: -5px;
+    margin-left: -1px;
+}
+
+/* For Error Message */
+.ErrorMessage {
+    color: #f00;
+    margin-left: 9px;
+}
+
+
+/* for InputBox */
+.InputBox input,
+.InputBox select {
+    width: 500px;
+    padding: 12px 15px;
+    font-weight: 700;
+    font-size: 17px;
+    border-radius: 999px;
+    border: 1px solid #000;
+    margin-top: 8px;
+}
+
+.InputBox textarea {
+    width: 100% !important;
+    max-width: 600px !important;
+    padding: 12px 14px;
+    font-weight: 700;
+    font-size: 17px;
+    border-radius: 8px;
+    border: 1px solid #000;
+    margin-top: 8px;
+    resize: none;
+    height: 12rem !important;
+}
+
+.InputError {
+    border: 1px solid #f00 !important;
+    color: #f00;
+}
+
+
+
+/* Responsive Styles */
+@media(max-width:1200px) {
+
+    .InputBox input,
+    .InputBox textarea {
+        max-width: 500px;
+    }
+}
+
+@media(max-width:790px) {
+    .InputBox {
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    .InputBox label {
+        font-weight: 700;
+        font-size: 15px;
+    }
+
+    .InputBox input,
+    .InputBox textarea {
+        max-width: 400px;
+        font-size: 15px;
+    }
+
+    .InputError {
+        font-size: 14px !important;
+    }
+}
+
+
+@media(max-width:590px) {
+    .InputBox label {
+        font-size: 13px;
+    }
+
+    .InputBox input,
+    .InputBox textarea {
+        font-size: 14px;
+        max-width: 300px;
+    }
+}

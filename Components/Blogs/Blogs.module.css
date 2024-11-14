@@ -1,0 +1,58 @@
+.OurBlogs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-block: 10px;
+}
+
+/* Blogs Box */
+.Box {
+    width: calc(25% - 10px);
+    height: 450px;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+}
+
+.Box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.Box:hover {
+    box-shadow: var(--boxShadow);
+}
+
+.Box:hover .BoxContent {
+    bottom: 0px;
+}
+
+.BoxContent {
+    position: absolute;
+    bottom: -90px;
+    color: #fff;
+    background: #000;
+    padding: 7px;
+}
+
+.BoxContent h6 {
+    font-weight: 800;
+    font-size: 16px;
+    width: 15ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-block: 7px;
+}
+
+.BoxContent p {
+    font-size: 12px;
+    color: #ccc;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

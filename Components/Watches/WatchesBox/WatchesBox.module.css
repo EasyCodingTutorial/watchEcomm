@@ -1,0 +1,63 @@
+.Box {
+    width: calc(25% - 10px);
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+}
+
+.Box:hover {
+    box-shadow: var(--boxShadow);
+}
+
+.Box img {
+    height: 200px;
+    width: 100%;
+    object-fit: contain;
+}
+
+.Box .Content {
+    padding: 15px;
+}
+
+.Box .Content h6 {
+    font-weight: 800;
+    font-size: 20px;
+    width: 14ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #000;
+}
+
+.Box .Content p {
+    font-size: 13px;
+    color: #333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    line-clamp: 7;
+    -webkit-box-orient: vertical;
+}
+
+@media(max-width:1150px) {
+    .Box {
+        width: calc(33.33% - 10px);
+    }
+
+}
+
+@media(max-width:790px) {
+    .Box {
+        width: calc(50% - 10px);
+    }
+
+}
+
+@media(max-width:500px) {
+    .Box {
+        width: calc(100%);
+    }
+
+}

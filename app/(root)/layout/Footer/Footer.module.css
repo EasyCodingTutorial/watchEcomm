@@ -1,0 +1,109 @@
+.Footer {
+    background: #000;
+    padding-inline: 200px;
+    padding-block: 40px;
+}
+
+.Footer .FooterRow {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    gap: 10px;
+}
+
+.Footer div img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 999px;
+    margin-top: 20px;
+    border: 0.2px solid #fff;
+}
+
+.Footer div {
+    color: #fff;
+}
+
+.Footer div h6 {
+    font-weight: 700;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.Footer .LinkText {
+    margin-top: 10px;
+}
+
+.Footer .LinkText a {
+    color: #fff;
+}
+
+.Footer .LinkText a span {
+    margin-right: 5px !important;
+}
+
+.FooterRow1 {
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px;
+    border-top: 0.2px dashed #ccc;
+}
+
+@media(max-width:1200px) {
+    .Footer {
+        padding-inline: 100px;
+    }
+}
+
+@media(max-width:991px) {
+    .Footer {
+        padding-inline: 50px;
+    }
+
+    .Footer .FooterRow {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .Footer div img {
+        height: 100px;
+        width: 100px;
+        margin-top: 10px;
+    }
+
+    .Footer div h6 {
+        font-size: 20px;
+        margin-top: 15px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .Footer {
+        padding-inline: 20px;
+        padding-block: 20px;
+    }
+
+    .Footer .FooterRow {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .Footer div img {
+        height: 80px;
+        width: 80px;
+    }
+
+    .Footer div h6 {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .Footer .LinkText {
+        margin-top: 8px;
+    }
+
+    .FooterRow1 {
+        margin-top: 10px;
+        padding: 10px;
+        font-size: 14px;
+    }
+}

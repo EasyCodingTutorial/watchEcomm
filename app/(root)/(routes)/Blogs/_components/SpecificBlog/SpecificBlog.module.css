@@ -1,0 +1,177 @@
+.SpecificBlogRow {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-block: 30px;
+    flex-wrap: wrap;
+    /* Allow wrapping for smaller screens */
+}
+
+.SpecificBlogRow img {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    /* Maintain image aspect ratio */
+}
+
+/* Content styles */
+.Content {
+    margin-block: 30px;
+    width: 100%;
+}
+
+.Content .Title {
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.Content .Intro {
+    font-weight: 800;
+    font-size: 40px;
+}
+
+.Content .Desc {
+    font-size: 18px;
+    margin-block: 10px;
+}
+
+.Btns {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.Btns a {
+    width: max-content;
+    background: var(--main);
+    color: #fff;
+    font-weight: 800;
+    font-size: 16px;
+    border-radius: 999px;
+    padding: 8px 22px;
+}
+
+/* For Loading */
+.LoadingParent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+}
+
+/* Responsive Adjustments */
+
+/* Medium Screens (Tablet) */
+@media (max-width: 768px) {
+    .SpecificBlogRow {
+        flex-direction: column;
+        /* Stack the images and content vertically */
+        gap: 10px;
+    }
+
+    .SpecificBlogRow img {
+        height: 300px;
+        /* Smaller image on tablet */
+    }
+
+    .Content .Intro {
+        font-size: 30px;
+        /* Smaller intro text on tablet */
+    }
+
+    .Content .Title {
+        font-size: 18px;
+        /* Slightly smaller title on tablet */
+    }
+
+    .Content .Desc {
+        font-size: 16px;
+        /* Smaller description text */
+    }
+
+    .Btns {
+        flex-direction: column;
+        /* Stack buttons vertically */
+        align-items: center;
+    }
+
+    .Btns a {
+        font-size: 14px;
+        /* Smaller button text */
+        padding: 6px 18px;
+        /* Adjust button padding */
+    }
+}
+
+/* Small Screens (Mobile) */
+@media (max-width: 480px) {
+    .SpecificBlogRow {
+        flex-direction: column;
+        /* Stack the images and content vertically */
+        gap: 8px;
+    }
+
+    .SpecificBlogRow img {
+        height: 200px;
+        /* Even smaller image on mobile */
+    }
+
+    .Content .Intro {
+        font-size: 24px;
+        /* Smaller intro text for mobile */
+    }
+
+    .Content .Title {
+        font-size: 16px;
+        /* Adjust title font size */
+    }
+
+    .Content .Desc {
+        font-size: 14px;
+        /* Adjust description font size */
+    }
+
+    .Btns {
+        gap: 12px;
+        /* Reduce gap between buttons */
+    }
+
+    .Btns a {
+        font-size: 12px;
+        /* Smaller button text on mobile */
+        padding: 6px 16px;
+        /* Adjust button padding */
+    }
+}
+
+/* Extra small screens (Portrait Phones) */
+@media (max-width: 375px) {
+    .SpecificBlogRow img {
+        height: 150px;
+        /* Further reduce image size for very small screens */
+    }
+
+    .Content .Intro {
+        font-size: 20px;
+        /* Further reduce intro text size */
+    }
+
+    .Content .Title {
+        font-size: 14px;
+        /* Adjust title font size */
+    }
+
+    .Content .Desc {
+        font-size: 12px;
+        /* Adjust description font size */
+    }
+
+    .Btns a {
+        font-size: 10px;
+        /* Very small text on very small screens */
+        padding: 5px 12px;
+        /* Adjust padding for smaller buttons */
+    }
+}

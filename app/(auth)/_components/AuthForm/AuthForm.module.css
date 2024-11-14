@@ -1,0 +1,83 @@
+.Auth {
+    position: relative;
+}
+
+.Auth form {
+    box-shadow: var(--boxShadow);
+    padding: 20px;
+    background: linear-gradient(rgba(237, 233, 233, 0.4), rgba(209, 204, 204, 0.2));
+    min-height: 500px;
+    max-width: 600px;
+    border-block: 10px solid var(--main);
+    color: #fff;
+}
+
+.Auth .AuthImgDiv {
+    text-align: center;
+    margin-block: 10px;
+}
+
+.Auth .AuthImgDiv img {
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+    border-radius: 999px;
+    box-shadow: var(--boxShadow);
+}
+
+.Auth form h6 {
+    font-weight: 800;
+    font-size: 40px;
+    text-align: center;
+    margin-block: 10px;
+}
+
+.Auth form input {
+    border: none !important;
+}
+
+.Auth form .btn {
+    width: 100%;
+    background: var(--main);
+    color: #fff;
+    padding: 12px 22px;
+    border-radius: 999px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+/*  */
+.CustomMessage {
+    margin-top: 10px;
+    margin-left: 5px;
+    color: #ccc;
+}
+
+.CustomMessage span {
+    color: #fff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* For Error/Success Messages */
+.ErrorMessage {
+    background: red;
+    color: #fff;
+    padding: 8px 22px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 12px;
+    width: max-content;
+    margin-block: 7px;
+}
+
+.SuccessMessage {
+    background: green;
+    color: #fff;
+    padding: 8px 22px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 12px;
+    width: max-content;
+    margin-block: 7px;
+}

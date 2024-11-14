@@ -1,0 +1,285 @@
+.WatchBox .Row {
+    margin-block: 60px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 5px solid #000; */
+    width: 80%;
+    padding: 20px;
+    margin-left: 100px;
+}
+
+
+.SecondRow {
+    margin-left: 100px;
+    padding: 20px;
+    margin-block: 50px;
+}
+
+
+.WatchBox .ImgContainer,
+.WatchBox .ContentBox {
+    width: 50%;
+    position: relative;
+}
+
+.WatchBox .ImgContainer {
+    height: 500px;
+    width: 500px;
+    overflow: hidden;
+}
+
+.WatchBox .ImgContainer img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.WatchBox .ContentBox .Custom {
+    color: #ccc;
+    font-weight: 700;
+    font-size: 12px;
+    margin-block: 5px;
+}
+
+.WatchBox .ContentBox .watchTitle {
+    font-weight: 800;
+    font-size: 20px;
+    margin-block: 8px;
+}
+
+.WatchBox .ContentBox .watchModelNum {
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: 800;
+}
+
+.WatchBox .ContentBox .Desc {
+    color: #313030;
+    border: 0.3px solid #ccc;
+    padding: 20px;
+    margin-block: 10px;
+    overflow: hidden;
+    height: max-content;
+}
+
+.WatchBox h6 {
+    font-size: 20px;
+    margin-bottom: 9px;
+}
+
+/* For Second Row */
+.SecondRow .Content_SecondRow {
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.SecondRow .Content_SecondRow h5 {
+    font-weight: 800;
+    font-size: 30px;
+    color: #383535;
+}
+
+.SecondRow h6 {
+    margin-block: 8px;
+    border-bottom: 0.1px dashed #ccc;
+    padding: 20px;
+}
+
+.SecondRow h6:last-child {
+    border-bottom: none;
+}
+
+/* for Btns Box */
+.BtnBox {
+    margin-block: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.BtnBox .Btn {
+    width: max-content;
+    padding: 10px 22px;
+    border-radius: 999px;
+    color: #fff;
+    background: var(--main);
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+/* For Medium Screens (Tablet and smaller) */
+@media (max-width: 868px) {
+
+    /* Adjust the layout of the main row */
+    .WatchBox .Row {
+        flex-direction: column;
+        /* Stack the elements vertically */
+        gap: 20px;
+        width: 100%;
+        /* Full width */
+        margin-left: 0;
+        /* Remove left margin */
+    }
+
+    /* Make the content boxes take up full width on smaller screens */
+    .WatchBox .ImgContainer,
+    .WatchBox .ContentBox {
+        width: 100%;
+        /* Take full width */
+        position: relative;
+    }
+
+    /* Adjust image container height for responsiveness */
+    .WatchBox .ImgContainer {
+        height: 300px;
+        /* Reduce height for smaller screens */
+        width: 100%;
+        /* Ensure it's responsive */
+    }
+
+    /* Adjust content box font sizes for better readability */
+    .WatchBox .ContentBox .Custom {
+        font-size: 14px;
+        /* Increase font size for better readability */
+    }
+
+    .WatchBox .ContentBox .watchTitle {
+        font-size: 18px;
+        /* Slightly reduce font size */
+    }
+
+    .WatchBox .ContentBox .watchModelNum {
+        font-size: 18px;
+        /* Adjust font size */
+    }
+
+    .WatchBox .ContentBox .Desc {
+        font-size: 16px;
+        /* Adjust font size */
+        padding: 15px;
+        /* Adjust padding for smaller screens */
+    }
+
+    .WatchBox h6 {
+        font-size: 18px;
+        /* Reduce font size */
+    }
+
+    /* For Second Row adjustments */
+    .SecondRow {
+        margin-left: 0;
+        /* Remove left margin */
+    }
+
+    .SecondRow .Content_SecondRow h5 {
+        font-size: 24px;
+        /* Reduce font size */
+    }
+
+    .SecondRow h6 {
+        font-size: 16px;
+        /* Adjust font size for headings */
+    }
+
+    /* Adjust Button Box layout */
+    .BtnBox {
+        flex-direction: column;
+        /* Stack buttons vertically */
+        gap: 10px;
+    }
+
+    .BtnBox .Btn {
+        width: 100%;
+        /* Make buttons take full width */
+        padding: 12px 20px;
+        /* Adjust button padding */
+        font-size: 14px;
+        /* Adjust button font size */
+    }
+}
+
+/* For Small Screens (Mobile and below) */
+@media (max-width: 480px) {
+
+    /* Adjust the layout of the main row */
+    .WatchBox .Row {
+        flex-direction: column;
+        /* Stack the elements vertically */
+        gap: 20px;
+        width: 100%;
+        /* Full width */
+        margin-left: 0;
+        /* Remove left margin */
+    }
+
+    /* Make the content boxes take up full width on small screens */
+    .WatchBox .ImgContainer,
+    .WatchBox .ContentBox {
+        width: 100%;
+        /* Full width */
+    }
+
+    /* Adjust image container height */
+    .WatchBox .ImgContainer {
+        height: 250px;
+        /* Smaller image on mobile */
+        width: 100%;
+    }
+
+    /* Adjust font sizes and paddings for better readability on mobile */
+    .WatchBox .ContentBox .Custom {
+        font-size: 12px;
+        /* Decrease font size */
+    }
+
+    .WatchBox .ContentBox .watchTitle {
+        font-size: 16px;
+        /* Reduce title size */
+    }
+
+    .WatchBox .ContentBox .watchModelNum {
+        font-size: 16px;
+        /* Adjust model number size */
+    }
+
+    .WatchBox .ContentBox .Desc {
+        font-size: 14px;
+        /* Smaller description font */
+        padding: 12px;
+        /* Adjust padding */
+    }
+
+    .WatchBox h6 {
+        font-size: 16px;
+        /* Reduce heading font size */
+    }
+
+    /* For Second Row adjustments */
+    .SecondRow .Content_SecondRow h5 {
+        font-size: 20px;
+        /* Smaller heading */
+    }
+
+    .SecondRow h6 {
+        font-size: 14px;
+        /* Adjust font size for headings */
+    }
+
+    /* Adjust Button Box layout for mobile */
+    .BtnBox {
+        flex-direction: column;
+        /* Stack buttons vertically */
+        gap: 8px;
+    }
+
+    .BtnBox .Btn {
+        width: 100%;
+        /* Full width buttons */
+        padding: 10px 18px;
+        /* Adjust button padding */
+        font-size: 14px;
+        /* Smaller font size */
+    }
+}

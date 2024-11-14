@@ -1,0 +1,144 @@
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 200px;
+    padding-block: 20px;
+}
+
+.Navbar>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Navbar .navLinks {
+    display: flex;
+    gap: 7px;
+}
+
+.Navbar img {
+    height: 120px;
+    width: 120px;
+    object-fit: cover;
+    box-shadow: var(--boxShadow);
+    border-radius: 999px;
+}
+
+.navLinks a {
+    color: #000;
+    font-weight: 600;
+    border-radius: 999px;
+    padding: 8px 16px;
+}
+
+.navLinks a:hover,
+.navLinks a.ActiveLink {
+    background: var(--main);
+    color: #fff;
+}
+
+/* For LogoutBtn */
+.LogoutBtn {
+    margin: 0px 5px;
+    background: var(--main);
+    color: #fff;
+    padding: 8px 22px;
+    font-weight: 700;
+}
+
+
+/* For Responsive/Mobile Screens */
+
+.MenuIcon {
+    cursor: pointer;
+    font-size: 2.4rem;
+    display: none;
+}
+
+.Slider {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100%;
+    width: 300px;
+    transition: right 0.3s ease-in-out;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 100000;
+}
+
+.Slider.Open {
+    right: 0;
+}
+
+.SliderContent {
+    position: relative;
+    width: 300px;
+    background: #fff;
+    box-shadow: var(--boxShadow);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+}
+
+.closeIcon {
+    cursor: pointer;
+    font-size: 2.2rem;
+    align-self: flex-end;
+    margin-bottom: 2rem;
+}
+
+.CustomNavLinks {
+    margin-block: 7px;
+    text-align: center;
+    padding: 8px 22px;
+    border-radius: 999px;
+}
+
+.CustomNavLinks:hover {
+    background: var(--main);
+}
+
+.CustomNavLinks:hover a {
+    color: #fff;
+}
+
+.CustomNavLinks a {
+    color: #333;
+    padding: 8px 22px;
+    margin: 10px 0;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+@media(max-width:1600px) {
+    .Navbar {
+        padding-inline: 100px;
+        padding-block: 10px;
+    }
+
+    .Navbar img {
+        height: 80px;
+        width: 80px;
+    }
+
+    .Navbar .navLinks,
+    .Navbar .NavbarLoginBtn {
+        display: none;
+    }
+
+    .MenuIcon {
+        display: initial !important;
+    }
+}
+
+@media (max-width:1000px) {
+    .Navbar {
+        padding-inline: 20px;
+
+    }
+}

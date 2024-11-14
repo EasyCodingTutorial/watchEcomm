@@ -1,0 +1,37 @@
+.Main {
+    margin-block: 20px;
+    padding: 20px;
+    height: 70vh;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+/* For Scrollbar */
+.Main::-webkit-scrollbar {
+    width: 2px;
+}
+
+.Main::-webkit-scrollbar-thumb {
+    background: var(--main);
+}
+
+.Main::-webkit-scrollbar-track {
+    background: #ccc;
+}
+
+/* For Content */
+.Content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Content h6 {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.Content p {
+    color: #1c1a1a;
+    font-weight: 700;
+    font-size: 17px;
+}

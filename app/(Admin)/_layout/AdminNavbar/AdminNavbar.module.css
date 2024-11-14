@@ -1,0 +1,77 @@
+.Sidebar {
+    width: 20vw;
+    height: 100vh;
+    background-color: #20232a;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.LogoBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.LogoBox img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+.NavLinks {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+}
+
+.NavItem {
+    width: 100%;
+    padding: 15px 10px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.NavItem:hover {
+    background-color: #333740;
+    cursor: pointer;
+}
+
+.Icon {
+    margin-right: 15px;
+    font-size: 1.5vw;
+}
+
+.Bottom {
+    position: absolute;
+    bottom: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.Bottom a {
+    color: #ff4d4d;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+.Bottom a:hover {
+    color: #ff1a1a;
+    cursor: pointer;
+}

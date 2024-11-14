@@ -1,0 +1,49 @@
+.WatchContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block: 10px;
+    border-bottom: 0.1px dashed #ccc;
+    padding: 10px;
+}
+
+.WatchContent .First {
+    display: flex;
+    align-items: center;
+    width: 95%;
+}
+
+.WatchContent .Last {
+    width: 5%;
+}
+
+.WatchContent .First img {
+    height: 80px;
+    width: 80px;
+    border-radius: 999px;
+    object-fit: contain;
+    box-shadow: var(--boxShadow);
+}
+
+.WatchContent .First .Content {
+    padding: 8px;
+}
+
+.WatchContent .First .Content .WatchTitle {
+    font-size: 13px;
+    white-space: nowrap;
+    width: 100ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #000;
+}
+
+.WatchContent .First .Date {
+    font-size: 12px;
+    color: #575656;
+    margin-top: 5px;
+}
+
+.WatchContent .Last h6 {
+    color: #000;
+}

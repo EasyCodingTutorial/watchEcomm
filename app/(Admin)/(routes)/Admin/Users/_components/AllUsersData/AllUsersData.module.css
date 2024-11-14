@@ -1,0 +1,26 @@
+.AllUsersData {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+.ErrorMessage {
+    text-align: center;
+    margin-block: 20px;
+}
+
+.ErrorMessage p {
+    font-weight: 800;
+    font-size: 30px;
+    color: #ff0000;
+}
+
+/* For Loading */
+.LoadingParent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+}

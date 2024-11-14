@@ -1,0 +1,40 @@
+.Content {
+    text-align: center;
+    margin-block: 8px;
+}
+
+.Content h6 {
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.Content h5 {
+    font-weight: 900;
+    font-size: 30px;
+}
+
+@media(max-width:900px) {
+
+    .Content h6 {
+        font-weight: 800;
+        font-size: 16px;
+    }
+
+    .Content h5 {
+        font-weight: 900;
+        font-size: 22px;
+    }
+}
+
+@media(max-width:400px) {
+
+    .Content h6 {
+        font-weight: 800;
+        font-size: 14px;
+    }
+
+    .Content h5 {
+        font-weight: 900;
+        font-size: 18px;
+    }
+}

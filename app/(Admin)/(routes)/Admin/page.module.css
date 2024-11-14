@@ -1,0 +1,15 @@
+.Parent {
+    display: flex;
+    padding: 20px;
+}
+
+.Parent .MainLeft {
+    width: 70%;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.Parent .MainRight {
+    width: 30%;
+    overflow: hidden;
+}

@@ -1,0 +1,104 @@
+.MainBg {
+    position: relative;
+}
+
+.MainBg img {
+    height: 90vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.MainBg .Overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(-160deg, rgba(0, 0, 0, 0.3), rgba(247, 247, 247, 0.3));
+}
+
+.MainBg .Content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.MainBg .Content h6 {
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.MainBg .Content h5 {
+    font-weight: 900;
+    font-size: 40px;
+    margin-block: 7px;
+}
+
+/* for Slider Controls */
+.SliderControls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 3;
+}
+
+.PrevButton,
+.NextButton {
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.PrevButton:hover,
+.NextButton:hover {
+    background: #000;
+}
+
+.PrevButton {
+    border-radius: 5px 0 0 5px;
+}
+
+.NextButton {
+    border-radius: 0 5px 5px 0;
+}
+
+@media(max-width:1200px) {
+    .MainBg .Content h6 {
+        font-size: 16px;
+    }
+
+    .MainBg .Content h5 {
+        font-size: 30px;
+    }
+}
+
+@media(max-width:950px) {
+    .MainBg img {
+        height: 70vh;
+    }
+
+}
+
+@media(max-width:650px) {
+    .MainBg .Content h6 {
+        font-size: 13px;
+    }
+
+    .MainBg .Content h5 {
+        font-size: 18px;
+    }
+
+    .MainBg img {
+        height: 60vh;
+    }
+}

@@ -1,0 +1,120 @@
+.AddNewWatch {
+    margin: 20px 20px;
+    padding: 20px 30px;
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 95vh;
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--boxShadow);
+    border-top: 10px solid var(--main);
+    scroll-behavior: smooth;
+}
+
+.AddNewWatch::-webkit-scrollbar {
+    width: 10px;
+}
+
+.AddNewWatch::-webkit-scrollbar-thumb {
+    background: var(--main);
+}
+
+.AddNewWatch::-webkit-scrollbar-track {
+    background: #ccc;
+}
+
+.AddNewWatch h2 {
+    font-weight: 800;
+    font-size: 50px;
+    margin-block: 10px;
+    color: #000;
+    text-align: center;
+}
+
+.AddNewWatch .Row {
+    margin-top: 450px;
+}
+
+
+.AddNewWatch form {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+/* For Upload Thing */
+.ImgUploader {
+    display: flex;
+    gap: 5px;
+}
+
+.ImgContentUploadThing {
+    margin-top: 4px;
+}
+
+.ImgContentUploadThing img {
+    height: 240px;
+    width: 250px;
+    object-fit: cover;
+    margin-top: 10px;
+    border-radius: 10px !important;
+}
+
+.ParentUploadThing label {
+    font-weight: 800;
+}
+
+.ParentUploadThing span {
+    color: #f00;
+    margin-left: 7px;
+}
+
+
+
+.AddNewWatch form .Content {
+    width: 50%;
+    overflow: hidden;
+    height: max-content;
+}
+
+.AddNewWatch form .Content h5 {
+    color: #ccc;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+/* For Btn */
+.AddNewWatch form .Btn {
+    width: 100%;
+    background: var(--main);
+    color: #fff;
+    font-weight: 700;
+    padding: 12px 22px;
+    border-radius: 999px !important;
+    cursor: pointer;
+}
+
+/* For Error/Success Messages */
+.ErrorMessage {
+    background: #f00;
+    width: max-content;
+    padding: 8px 22px;
+    border-radius: 999px;
+    font-size: 12px;
+    color: #fff;
+    margin-top: 8px;
+    font-weight: 800;
+}
+
+.SuccessMessage {
+    background: green;
+    width: max-content;
+    padding: 8px 22px;
+    border-radius: 999px;
+    font-size: 12px;
+    color: #fff;
+    margin-top: 8px;
+    font-weight: 800;
+}

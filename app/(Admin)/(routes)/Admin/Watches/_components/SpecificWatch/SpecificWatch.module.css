@@ -1,0 +1,28 @@
+/* Loading */
+.Loading {
+    position: absolute;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* For Error */
+.Error {
+    position: absolute;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Error p {
+    background: #f00;
+    color: #fff;
+    padding: 8px 22px;
+    border-radius: 999px;
+    font-size: 18px;
+}

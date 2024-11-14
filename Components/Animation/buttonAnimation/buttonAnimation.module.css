@@ -1,0 +1,83 @@
+.ButtonAnimation,
+.LoadingAnimation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.ButtonAnimation .Parent {
+    border: 3px solid #fff;
+    border-top: 3px solid var(--main);
+    height: 25px;
+    width: 25px;
+    border-radius: 999px;
+    animation: Loading 0.8s linear infinite;
+}
+
+@keyframes Loading {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+
+/* For Loader */
+/* // https://css-loaders.com/flipping/ */
+
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: 60px;
+    aspect-ratio: 1;
+    animation: l5-0 1s infinite steps(1);
+}
+
+.loader::before,
+.loader::after {
+    content: "";
+    position: absolute;
+    inset: 0 50% 50% 0;
+    transform-origin: bottom right;
+    animation:
+        l5-1 0.5s infinite linear alternate,
+        l5-2 0.5s infinite steps(1) alternate;
+}
+
+.loader::after {
+    --s: -1, -1;
+}
+
+@keyframes l5-0 {
+    0% {
+        transform: scale(1, 1) rotate(0deg)
+    }
+
+    50% {
+        transform: scale(1, -1) rotate(90deg)
+    }
+}
+
+@keyframes l5-1 {
+    0% {
+        transform: scale(var(--s, 1)) perspective(150px) rotateX(0deg)
+    }
+
+    100% {
+        transform: scale(var(--s, 1)) perspective(150px) rotateX(180deg)
+    }
+}
+
+@keyframes l5-2 {
+    0% {
+        background: #25b09b
+    }
+
+    50% {
+        background: #514b82
+    }
+}

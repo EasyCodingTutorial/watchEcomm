@@ -1,0 +1,21 @@
+/* Normal Btn */
+.Btn {
+    width: max-content;
+    background: var(--main);
+    padding: 8px 18px;
+    border-radius: 999px;
+    color: #fff;
+    font-weight: 700;
+}
+
+
+
+
+/* Back Button */
+.BackBtn {
+    width: max-content;
+    padding: 6px 12px;
+    background: var(--main);
+    color: #fff;
+    border-radius: 999px;
+}

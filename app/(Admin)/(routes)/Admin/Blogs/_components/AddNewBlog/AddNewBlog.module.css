@@ -1,0 +1,88 @@
+/* Main Container */
+.AddNewBlog {
+    display: flex;
+    justify-content: center;
+    margin-block: 50px;
+}
+
+.AddNewBlog form {
+    box-shadow: var(--boxShadow);
+    padding: 20px;
+}
+
+.AddNewBlog form h6 {
+    font-weight: 900;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.AddNewBlog .ParentRow {
+    display: flex;
+    gap: 20px;
+}
+
+/* Button Styling */
+.Btn {
+    width: 100%;
+    background: var(--main);
+    color: #fff;
+    font-weight: 800;
+    padding: 12px 18px;
+    border-radius: 999px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Image Uploader Styling */
+.ImageUpload_Parent {
+    margin-block: 8px;
+}
+
+.ImageUpload_Parent label {
+    font-weight: 800;
+}
+
+.ImageUploader {
+    display: flex;
+    gap: 3px;
+}
+
+.ImageUploader img {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    box-shadow: var(--boxShadow);
+    margin-top: 8px;
+    border-radius: 10px;
+}
+
+/* Error and Success Messages */
+.errorMessage {
+    margin-top: 6px;
+    background: #ff0000;
+    padding: 8px 22px;
+    border-radius: 999px;
+    font-size: 12px;
+    width: max-content;
+    color: #fff;
+    font-weight: 800;
+}
+
+.successMessage {
+    margin-top: 6px;
+    background: green;
+    padding: 8px 22px;
+    border-radius: 999px;
+    font-size: 12px;
+    width: max-content;
+    color: #fff;
+    font-weight: 800;
+}
+
+/* Normal Error Message Image*/
+.UploadImgErrorMessage {
+    margin-left: 10px;
+    color: #f00;
+    font-weight: 700;
+}

@@ -1,0 +1,17 @@
+.Box {
+    position: relative;
+    height: 200px;
+    width: calc(25% - 10px);
+    box-shadow: var(--boxShadow);
+    text-align: center;
+}
+
+
+.Box .Content {
+    margin-top: 30px;
+}
+
+.Box .Content h6 {
+    font-weight: 800;
+    font-size: 15px;
+}

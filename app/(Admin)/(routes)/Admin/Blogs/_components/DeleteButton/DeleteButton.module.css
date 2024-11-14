@@ -1,0 +1,10 @@
+.Btn {
+    width: max-content;
+    background: var(--main);
+    padding: 8px 22px;
+    color: #fff;
+    font-weight: 800;
+    border-radius: 999px;
+    cursor: pointer;
+    font-size: 16px;
+}

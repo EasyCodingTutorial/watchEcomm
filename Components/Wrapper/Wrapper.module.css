@@ -1,0 +1,24 @@
+.Wrapper {
+    padding-inline: 200px;
+    padding-block: 20px;
+    margin-block: 20px;
+}
+
+
+@media (max-width: 1200px) {
+    .Wrapper {
+        padding-inline: 100px;
+    }
+}
+
+@media (max-width: 900px) {
+    .Wrapper {
+        padding-inline: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    .Wrapper {
+        padding-inline: 20px;
+    }
+}

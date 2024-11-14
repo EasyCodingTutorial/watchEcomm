@@ -1,0 +1,27 @@
+.Parent {
+    display: flex;
+}
+
+.Parent .NavbarContent {
+    width: 20%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.Parent .RestContent {
+    width: 80%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.RestContentFooter {
+    position: fixed;
+    bottom: 0px;
+    background: #20232a;
+    border-top: 1px solid #ccc;
+    width: 100%;
+    text-align: center;
+    padding-block: 10px;
+}
