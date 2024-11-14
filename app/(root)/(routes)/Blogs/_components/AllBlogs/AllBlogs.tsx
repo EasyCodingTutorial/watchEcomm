@@ -104,6 +104,7 @@ export const AllBlogs = () => {
                             Path={`/Blogs/${I._id}/SpecificBlog`}
                             Id={I._id}
                             ImgUrl={I.imageUpload}
+                            key={I._id}
                         />
                     ))
                 }
