@@ -111,7 +111,7 @@ export const LatestWatches = () => {
                         />
                         <div className={styles.LatestWatches}>
                             {
-                                watchesData.filter((I: any) => I.genderValue === "male").map((I) => (  // Correct comparison
+                                watchesData.filter((I: any) => I.genderValue === "male" || I.genderValue === 'unisex').map((I) => (  // Correct comparison
                                     <WatchesBox
                                         ImgUrl={I.watchImgUrl}
                                         WatchTitle={I.watchName}
@@ -135,7 +135,7 @@ export const LatestWatches = () => {
                         />
                         <div className={styles.LatestWatches}>
                             {
-                                watchesData.filter((I: any) => I.genderValue === 'Women').map((I) => (  // Correct comparison
+                                watchesData.filter((I: any) => I.genderValue === 'female' || I.genderValue === 'unisex').map((I) => (  // Correct comparison
                                     <WatchesBox
                                         ImgUrl={I.watchImgUrl}
                                         WatchTitle={I.watchName}

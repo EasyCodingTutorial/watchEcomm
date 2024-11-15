@@ -70,7 +70,7 @@ export const DeleteButton = (
                 loading ? (
                     <ButtonAnimation>Deleting...</ButtonAnimation>
                 )
-                    : ' Remove Watch Now'
+                    : ' Delete Blog Now'
             }
         </button>
     )

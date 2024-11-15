@@ -25,7 +25,7 @@ export const WatchesContent = (
     }: WatchesContentProps
 ) => {
     return (
-        <Link href={`/${Path}/${Id}`} className={styles.WatchContent} >
+        <Link href={`${Path}`} className={styles.WatchContent} >
             <div className={styles.First}>
                 <img src={ImgUrl} alt={ImgAlt} />
                 <div className={styles.Content}>
