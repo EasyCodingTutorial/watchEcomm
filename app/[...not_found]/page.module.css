@@ -16,6 +16,7 @@
 .NotFound img {
     height: 800px;
     width: 800px;
+    object-fit: cover;
 }
 
 .Content p {
@@ -35,13 +36,12 @@
     margin-block: 10px;
 }
 
-
 .Content a {
-
     background: var(--main);
     color: #fff;
-    padding: 12px 22px;
     margin-right: 10px;
+    text-align: center;
+    padding: 13px 22px;
 }
 
 @media (max-width: 1200px) {
@@ -71,15 +71,49 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        height: auto;
     }
 
-    .content {
-        text-align: center !important;
+    .NotFound .ImgBox,
+    .NotFound .Content {
+        width: 80%;
+    }
+
+    .Content p {
+        font-size: 16px;
+    }
+
+    .Content h6 {
+        font-size: 24px;
+    }
+
+    .Content h5 {
+        font-size: 24px;
     }
 
     .Content a {
-        display: block !important;
-        margin-block: 10px !important;
+        display: block;
+        margin-block: 10px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .NotFound .ImgBox,
+    .NotFound .Content {
+        width: 90%;
+    }
+
+    .Content p {
+        font-size: 14px;
+    }
+
+    .Content h6 {
+        font-size: 20px;
+    }
+
+    .Content h5 {
+        font-size: 22px;
     }
 }

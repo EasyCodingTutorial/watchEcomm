@@ -1,0 +1,23 @@
+.Profile_image {
+    text-align: center;
+    margin-block: 20px;
+}
+
+.ProfileData img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 999px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.ProfileData .Btn {
+    width: 100%;
+    background: var(--main);
+    color: #fff;
+    font-weight: 700;
+    font-size: 13px;
+    padding: 12px 22px;
+    border-radius: 999px;
+    cursor: pointer;
+}

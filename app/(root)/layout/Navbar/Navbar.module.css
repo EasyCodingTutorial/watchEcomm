@@ -45,6 +45,7 @@
     color: #fff;
     padding: 8px 22px;
     font-weight: 700;
+    border-radius: 999px;
 }
 
 
@@ -115,6 +116,7 @@
     text-align: center;
 }
 
+
 @media(max-width:1600px) {
     .Navbar {
         padding-inline: 100px;
@@ -139,6 +141,7 @@
 @media (max-width:1000px) {
     .Navbar {
         padding-inline: 20px;
-
     }
+
+
 }

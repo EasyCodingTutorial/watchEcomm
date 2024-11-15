@@ -27,14 +27,58 @@
     z-index: 2;
     color: #fff;
     text-align: center;
+    padding: 0 20px;
 }
 
 .Content h6 {
     font-weight: 800;
     font-size: 30px;
+    margin-bottom: 10px;
 }
 
 .Content h5 {
     font-weight: 900;
     font-size: 80px;
+}
+
+@media (max-width: 768px) {
+    .MainBg img {
+        height: 50vh;
+    }
+
+    .Content h6 {
+        font-size: 18px;
+    }
+
+    .Content h5 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .MainBg img {
+        height: 40vh;
+    }
+
+    .Content h6 {
+        font-size: 16px;
+    }
+
+    .Content h5 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 360px) {
+    .MainBg img {
+        height: 30vh;
+    }
+
+    .Content h6 {
+        font-size: 12px;
+    }
+
+    .Content h5 {
+        font-size: 16px;
+    }
 }

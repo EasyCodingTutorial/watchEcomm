@@ -25,3 +25,22 @@
     text-align: center;
     padding-block: 10px;
 }
+
+.Mobile {
+    display: none;
+}
+
+@media(max-width:1100px) {
+    .Mobile {
+        display: initial;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .Parent {
+        display: none;
+    }
+}

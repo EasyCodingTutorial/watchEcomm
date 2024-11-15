@@ -56,3 +56,26 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+
+
+@media(max-width:1150px) {
+    .Box {
+        width: calc(33.33% - 10px);
+    }
+
+}
+
+@media(max-width:790px) {
+    .Box {
+        width: calc(50% - 10px);
+    }
+
+}
+
+@media(max-width:500px) {
+    .Box {
+        width: calc(100%);
+    }
+
+}

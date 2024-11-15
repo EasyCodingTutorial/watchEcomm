@@ -132,7 +132,7 @@ export const RootNavbar = () => {
                     {
                         status === 'authenticated' ?
                             (
-                                <div>
+                                <div className={styles.NormalButtonLinks}>
                                     <Button
                                         LinkText='Profile'
                                         LinkTo='/Profile'

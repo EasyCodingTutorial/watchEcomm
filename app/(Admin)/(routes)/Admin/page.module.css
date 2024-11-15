@@ -13,3 +13,19 @@
     width: 30%;
     overflow: hidden;
 }
+
+@media(max-width:1300px) {
+
+    .Parent {
+        display: block;
+        padding: 20px;
+    }
+
+    .Parent .MainLeft {
+        width: 100%;
+    }
+
+    .Parent .MainRight {
+        width: 100%;
+    }
+}

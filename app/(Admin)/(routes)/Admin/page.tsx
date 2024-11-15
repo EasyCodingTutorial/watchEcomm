@@ -19,7 +19,8 @@ const Adminpage = () => {
                 </div>
                 <div className={styles.MainRight}>
                     {/* Right Now I Am Not Able To Think Other Name For This Thats Why */}
-                    <AdminMainRightContent />
+                    {/* ToDo */}
+                    {/* <AdminMainRightContent /> */}
                 </div>
             </div>
         </>

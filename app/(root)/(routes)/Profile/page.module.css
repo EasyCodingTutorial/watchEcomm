@@ -1,0 +1,16 @@
+.Profile {
+    display: flex;
+    justify-content: center;
+    margin-block: 20px;
+}
+
+.Profile_Main {
+    box-shadow: var(--boxShadow);
+    padding: 20px;
+}
+
+.Profile_Main h6 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+}

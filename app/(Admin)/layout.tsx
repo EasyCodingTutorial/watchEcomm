@@ -10,17 +10,25 @@ const Adminlayout = (
     { children }: { children: React.ReactNode }
 ) => {
     return (
-        <div className={styles.Parent}>
-            <div className={styles.NavbarContent}>
-                <AdminNavbar />
-            </div>
-            <div className={styles.RestContent}>
-                {children}
-                <div className={styles.RestContentFooter}>
-                    <AdminFooter />
+        <>
+            <div className={styles.Parent}>
+                <div className={styles.NavbarContent}>
+                    <AdminNavbar />
+                </div>
+                <div className={styles.RestContent}>
+                    {children}
+                    <div className={styles.RestContentFooter}>
+                        <AdminFooter />
+                    </div>
                 </div>
             </div>
-        </div>
+
+            <div className={styles.Mobile}>
+                <h2>Admin Dashboard is Not Suitable For Smaller Screens Kindly Open in Larger Screens</h2>
+            </div>
+
+
+        </>
     )
 }
 
