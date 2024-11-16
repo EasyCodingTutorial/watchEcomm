@@ -36,6 +36,9 @@ In this tutorial, we’ll walk through building a fully responsive e-commerce we
 - **Protected Routes**: Sensitive routes, such as the admin dashboard, are protected and accessible only by authenticated users with appropriate roles.
 - **UploadThing Integration**: Product images are uploaded using **UploadThing**, making it simple to handle image files and other media.
 
+## Wants To Access The Admin Dashboard
+ - **Credentials**: Email: admin@gmail.com, Password: 123456
+
 ## Known Issues:
 1. **Middleware Protection**: All admin routes are not currently protected, and some routes that require protection are also exposed.
 2. **Payment Gateway**: A payment gateway has not been integrated due to time constraints.
