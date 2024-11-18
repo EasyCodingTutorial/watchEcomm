@@ -1,5 +1,7 @@
 # Watch E-commerce Website 
-![Untitled design](https://github.com/user-attachments/assets/10877dc5-d802-4bad-bb38-2b1b5fd5c210)
+![Untitled design](https://github.com/user-attachments/assets/5e990671-4d82-4b4c-b1bf-fc306a684767)
+
+
 
  
 ## Overview
