@@ -104,3 +104,8 @@ UploadThing is used in this project to handle product image uploads. To use it, 
 
 ## Contributions
 Contributions are welcome! Feel free to open issues for any bugs, feature requests, or suggestions. If you're interested in adding new features (like the payment gateway or improving middleware protection), feel free to fork the project and submit a pull request!
+
+
+## Learn By Watching Video ▶️
+[![Watch Demo Video](https://img.youtube.com/vi/2tZL7bgK9uk/maxresdefault.jpg)](https://www.youtube.com/watch?v=2tZL7bgK9uk)
+
