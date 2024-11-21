@@ -2,7 +2,6 @@
 ![Untitled design](https://github.com/user-attachments/assets/5e990671-4d82-4b4c-b1bf-fc306a684767)
 
 
-
  
 ## Overview
 The **Watch E-commerce Website** is a fully responsive online store built from scratch using **Next.js** and **TypeScript**. The platform allows users to browse and purchase premium watches, while also providing a robust admin dashboard for managing products, orders, and users.
