@@ -104,5 +104,5 @@ Contributions are welcome! Feel free to open issues for any bugs, feature reques
 
 
 ## Learn By Watching Video ▶️
-[![Watch Demo Video](https://img.youtube.com/vi/2tZL7bgK9uk/maxresdefault.jpg)](https://www.youtube.com/watch?v=2tZL7bgK9uk)
+[![Watch Demo Video](https://img.youtube.com/vi/edBnBKzFO4s/maxresdefault.jpg)](https://www.youtube.com/watch?v=edBnBKzFO4s)
 
